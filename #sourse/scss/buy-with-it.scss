@@ -1,0 +1,130 @@
+.buy-with-it {
+	padding: 50px 0;
+	position: relative;
+	@media (max-width: $md4){
+		padding: 0px 0px 50px 0px;
+	}
+	&__body {
+		margin: 100px 0px 0px 0px;
+		@include flexbox();
+		justify-content: center;
+		@media (max-width: 1107px){
+			flex-wrap: wrap;
+			margin: 50px 0px 0px 0px;
+		}
+		@media (max-width: 646px){
+			margin: 0;
+		}
+	}
+	&__item {
+		@include flexbox();
+		width: 620px;
+		padding: 0px 45px 0px 0px;
+		&:first-child{
+			border-right: 2px solid $lightGray;
+			@media (max-width: 1107px){
+				border-bottom: 2px solid $lightGray;
+				border-right: none;
+			}
+		}
+		@media (max-width: 1107px){
+			padding: 35px 0;
+		}
+		@media (max-width: 646px){
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+	&__title{
+		font-weight: 500;
+		font-size: 35px;
+		line-height: 41px;
+		color: $darkBlue;
+		@media (max-width: 646px){
+			font-size: 22px;
+			line-height: 50px;
+		}
+		@media (max-width: $md4){
+			line-height: 1.2;
+		}
+	}
+}
+.buy-with-it__indent{
+	padding: 0px 0px 50px 0px;
+}
+.item {
+	&__photo {
+		@media (max-width: 646px){
+			margin: 0px 0px 30px 0px;
+		}
+	}
+	&__info {}
+}
+.title {
+	&__product {
+		font-weight: 500;
+		font-size: 19px;
+		line-height: 23px;
+		color: $darkBlue;
+		margin: 0px 0px 12px 0px;
+		position: relative;
+		padding: 0;
+		@media (max-width: 646px){
+			max-width: 360px;
+			font-size: 16px;
+			line-height: 19px;
+		}
+		@media (max-width: $md4){
+			width: 360px;
+		}
+	}
+}
+.text {
+	&__product {
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 25px;
+		color: $gray;
+		margin: 0px 0px 45px 0px;
+		@media (max-width: 646px){
+			max-width: 360px;
+			font-size: 14px;
+			line-height: 20px;
+		}
+		@media (max-width: $md4){
+			width: 360px;
+		}
+	}
+}
+.buton {
+	&__product {
+		background: $white;
+		border: 2px solid $green;
+		box-sizing: border-box;
+		border-radius: 10px;
+		line-height: 58px;
+		color: $green;
+		@media (max-width: $md4){
+			line-height: 48px;
+		}
+	}
+}
+.product-catalog{
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	@media (max-width: 1107px){
+		justify-content: center;
+	}
+}
+.product-item{
+	flex: 0 0 50%;
+	border-bottom: 2px solid $lightGray;
+	padding: 25px 0;
+	&:last-child{
+		border-bottom: none;
+		border-right: 2px solid $lightGray;
+		@media (max-width: 1107px){
+			border-right: none;
+		}
+	}
+}

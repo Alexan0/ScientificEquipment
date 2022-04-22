@@ -1,0 +1,75 @@
+.footer {
+	padding: 50px 0px 50px 0px;
+	@media (max-width: $md2){
+		padding: 0px 0px 25px 0px;
+	}
+	&__row {
+		@include flexbox();
+		justify-content: space-between;
+		@media (max-width: 822px){
+			flex-direction: column;
+		}
+	}
+	&__logo {}
+	&__contact {
+		@include flexbox();
+		@media (max-width: 822px){
+			flex-direction: column;
+		}
+	}
+	&__text{
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 30px;
+		color: #AFB5C0;
+		margin: 60px 0px 0px 0px;
+	}
+}
+.contact {
+	&__menu {
+		margin: 0px 45px 0px 0px;
+		@media (max-width: 822px){
+			margin: 28px 0px 0px 0px;
+		}
+	}
+	&__menu-item {}
+	&__social {
+		@media (max-width: 822px){
+			margin: 28px 0px 0px 0px;
+		}
+	}
+}
+.menu-item {
+	&__link {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 30px;
+		transition: all .2s ease;
+		color: $darkBlue;
+		&:hover{
+			color: $green;
+		}
+	}
+}
+.social {
+	&__menu-item {}
+	&__link {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 30px;
+		color: $gray;
+		transition: all .2s ease;
+		&:hover{
+			color: $green;
+		}
+	}
+}
+.social__link.active{
+	color: $green;
+}
+
+
+
+
+
+

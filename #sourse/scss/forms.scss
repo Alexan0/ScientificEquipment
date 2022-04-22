@@ -1,0 +1,94 @@
+//------------ СТИЛИ ДЛЯ КНОПОК---------------
+
+.btn{
+	display: block;
+	width: 300px;
+	height: 60px;
+	background: $green;
+	box-shadow: 0px 4px 20px rgba(13, 77, 42, 0.33);
+	border-radius: 10px;
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 60px;
+	text-align: center;
+	color: $white;
+	cursor: pointer;
+	transition: all .2s linear;
+	&:active{
+		width: 300px;
+		height: 48px;
+		background: $lightGreen;
+		border-radius: 10px;
+	}
+	&:hover{
+		background: $white;
+		border: 2px solid $green;
+		border-radius: 10px;
+		color: $green;
+		line-height: 58px;
+		@media (max-width: $md4){
+			line-height: 48px;
+		}
+	}
+	@media (max-width: $md4){
+		max-width: 300px;
+		margin: 0 auto;
+		height: 50px;
+		line-height: 50px;
+	}
+}
+
+//------------ СТИЛИ ДЯЛ INPUT----------------
+
+.input{
+	width: 300px;
+	height: 38px;
+	background: $white;
+	border: 1px solid $white;
+	border-radius: 10px;
+	font-family: 'Rubik';
+	padding: 8px 12px;
+	box-shadow: 0px 4px 18px rgba(79, 86, 101, 0.1);
+	transition: border .2s linear;
+	&:focus{
+		border: 1px solid #4cb1ca;
+	}
+}
+
+.textarea{
+	width: 300px;
+	height: 132px;
+	resize: unset;
+	font-family: 'Rubik';
+	padding: 8px 12px;
+	background: $white;
+	border: 1px solid rgba(79, 86, 101, 0.1);
+	box-shadow: 0px 4px 18px rgba(79, 86, 101, 0.1);
+	border-radius: 10px;
+}
+
+
+.input::placeholder ,.textarea::placeholder{
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 400;
+	color: #B9BBC1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

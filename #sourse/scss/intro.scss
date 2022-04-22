@@ -1,0 +1,216 @@
+.intro {
+	padding: 50px 0px;
+	position: relative;
+	&__content {
+		@include flexbox();
+		align-items: center;
+		@media (max-width: $md3){
+			flex-wrap: wrap;
+		}
+	}
+	&__slider {
+		position: relative;
+		min-width: 0;
+		@media (max-width: $md3){
+			margin: 30px 0px 0px 0px;
+		}
+	}
+	&__info {
+		flex: 0 0 45%;
+		@media (max-width: $md3){
+			flex: 0 0 100%;
+		}
+	}
+}
+._product{
+	flex: 0 0 45%;
+	@media (max-width: $md3){
+		flex: 0 0 100%;
+	}
+}
+.slider {
+	&__item {
+		position: relative;
+		img{
+			display: block;
+			max-width: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+}
+.info {
+	&__title {
+		font-weight: 500;
+		font-size: 35px;
+		line-height: 41px;
+		color: $darkBlue;
+		margin: 0px 0px 15px 0px;
+		@media (max-width: $md3){
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 0px 0px 0px 15px;
+		}
+		@media (max-width: $md4){
+			font-size: 22px;
+			line-height: 26px;
+		}
+	}
+	&__subtitle {
+		font-weight: 500;
+		font-size: 22px;
+		line-height: 26px;
+		color: $darkBlue;
+		margin: 0px 0px 15px 0px;
+		@media (max-width: $md4){
+			font-size: 16px;
+			line-height: 19px;
+		}
+	}
+	&__text {
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 25px;
+		color: $gray;
+		margin: 0px 0px 30px 0px;
+		span{
+			font-weight: 700;
+		}
+		@media (max-width: $md4){
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+	&__list {
+		list-style: none;
+		margin: 0px 0px 24px 0px;
+	}
+	&__button {}
+}
+.product__subtitle{
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: $darkBlue;
+}
+.list {
+	&__item-intro {
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 20px;
+		color: $black;
+		margin: 0px 0px 15px 0px;
+		&:last-child{
+			margin: 0px 0px 0px 0px;
+		}
+		&:before{
+			content: '';
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background: url('../img/icons/check.svg') 0 0 no-repeat;
+			margin: 0px 15px -4px 0px;
+		}
+		@media (max-width: $md4){
+			font-size: 14px;
+			line-height: 17px;
+		}
+	}
+}
+.info__title.fix-title{
+	position: static;
+	padding: 0;
+}
+/*----Конкретный слайдер---*/
+
+.intro__slider .slick-arrow{
+	position: absolute;
+	top: 42%;
+	z-index: 5;
+	font-size: 0;
+	background: $white;
+	box-shadow: 0px 14px 44px rgba(14, 20, 34, 0.08);
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+.intro__slider .slick-arrow.slick-prev{
+	left: 5%;
+	background: url('../img/icons/arrow_left.svg') 14px 17px/50% no-repeat;
+}
+.intro__slider .slick-arrow.slick-next{
+	right: 5%;
+	background: url('../img/icons/arrow_right.svg') 14px 17px/50% no-repeat;
+}
+.intro__slider .slick-dots{
+	@include flexbox();
+	align-items: center;
+	justify-content: center;
+	margin: 30px 0 15px 0;
+	position: relative;
+}
+.intro__slider .slick-dots li{
+	margin: 0px 26px 0px 0px;
+	&:last-child{
+		margin: 0;
+	}
+}
+.intro__slider .slick-dots li button{
+	font-size: 0;
+	width: 15px;
+	height: 15px;
+	background-color: $lightGray;
+	border-radius: 50%;
+}
+.intro__slider .slick-dots li.slick-active button{
+	background: $green;
+	width: 25px;
+	border-radius: 50px;
+}
+//---------------------------------------------
+
+/* Слайдер */
+.slick-slider{}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+	@include flexbox();
+}
+/* Слайд */
+.slick-slide{
+	@include flexbox();
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}

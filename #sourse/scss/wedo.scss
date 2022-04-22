@@ -1,0 +1,41 @@
+.wedo {
+	position: relative;
+	padding: 150px 0px 50px;
+	@media (max-width: $md3){
+		padding: 80px 0px 50px;
+	}
+	@media (max-width: $md4){
+		padding: 60px 0px 50px;
+	}
+	&__content {
+		@include flexbox();
+		justify-content: space-between;
+		@media (max-width: $md3){
+			flex-wrap: wrap;
+		}
+	}
+}
+.content {
+	&__info {}
+	&__image {
+		@media (max-width: $md3){
+			margin: 0px 0px 25px 0px;
+		}
+		img{
+			@media (max-width: $md4){
+				max-width: 100%;
+			}
+		}
+	}
+	&__wedo {
+		max-width: 513px;
+		@media (max-width: $md3){
+			order: 2;
+		}
+	}
+}
+// .title__wedo{
+// 	padding: 0px 0px 0px 0px;
+// }
+
+

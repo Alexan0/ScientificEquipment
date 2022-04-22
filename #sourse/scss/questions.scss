@@ -1,0 +1,57 @@
+.questions {
+	padding: 70px 0;
+	@media (max-width: $md2){
+		padding: 50px 0 70px;
+	}
+	@media (max-width: $md2){
+		padding: 0px 0 70px 0;
+	}
+	&__body {
+		@include flexbox();
+		width: 1200px;
+		height: 233px;
+		background: $white;
+		box-shadow: 0px 4px 63px rgba(165, 165, 165, 0.25);
+		border-radius: 10px;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 100px;
+		@media (max-width: 1230px){
+			max-width: 740px;
+			margin: 0 auto;
+			padding: 0 60px;
+		}
+		@media (max-width: $md3){
+			flex-wrap: wrap;
+			max-width: 551px;
+			height: 208px;
+			padding: 30px 15px;
+		}
+		@media (max-width: 578px){
+			max-width: 351px;
+			height: 226px;
+		}
+	}
+	&__info {}
+	&__button {}
+}
+.title {
+	&__questions {
+		line-height: 45px;
+		position: relative;
+		padding: 0;
+		@media (max-width: $md3){
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+}
+.text {
+	&__questions {
+		max-width: 410px;
+		@media (max-width: $md3){
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}

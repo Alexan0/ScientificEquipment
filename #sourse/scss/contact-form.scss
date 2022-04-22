@@ -1,0 +1,176 @@
+.contact {
+	&__form {
+		width: 360px;
+		height: 725px;
+
+		background: $white;
+		box-shadow: 4px 4px 10px rgba(6, 43, 23, 0.15);
+		border-radius: 10px 10px 0px 0px;
+		position: absolute;
+		top: -200%;
+		right: 5%;
+		transition: all .4s ease;
+		z-index: 10;
+		@media (max-width: $md3){
+			height: 635px;
+		}
+		@media (max-width: $md4){
+			width: 100%;
+		}
+	}
+}
+.form {
+	&__body {
+		padding: 100px 0px 62px 0px;
+		position: relative;
+		@media (max-width: $md3){
+			padding: 80px 0px 30px 0px;
+		}
+	}
+	&__name {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		color: $gray;
+		margin: 0px 0px 8px 0px;
+	}
+	&__phone {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		color: $gray;
+		margin: 0px 0px 8px 0px;
+	}
+	&__comment {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		color: $gray;
+		margin: 0px 0px 8px 0px;
+	}
+	&__textarea {
+		margin: 0px 0px 30px 0px;
+	}
+	&__date {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 130%;
+		color: #B9BBC1;
+		padding: 0px 30px 0px 35px;
+		margin: 0px 0px 20px 0px;
+		cursor: pointer;
+		span{
+			color: $green;
+			font-weight: 500;
+		}
+	}
+	&__button {}
+	&__check{
+		@include flexbox();
+		position: relative;
+	}
+}
+.check {
+	&__checkbox {
+		-webkit-appearance: none;
+		appearance: none;
+		position: absolute;
+	}
+}
+.form__date:before{
+	content: '';
+	width: 20px;
+	height: 20px;
+	display: block;
+	border: 1px solid $green;
+	border-radius: 4px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	cursor: pointer;
+	background-color: $white;
+}
+.form__date:after{
+	content: '';
+	width: 12px;
+	height: 12px;
+	display: block;
+	background: url('../img/icons/check-input.svg') no-repeat;
+	background-size: 12px 12px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	z-index: 2;
+	opacity: 0;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+.check__checkbox:checked + .form__date:after{
+	opacity: 1;
+}
+.body {
+	&__clouse {
+		cursor: pointer;
+		span:nth-of-type(1){
+			background-color: $gray;
+			position: absolute;
+			width: 20px;
+			height: 2px;
+			right: 10%;
+			top: 17%;
+			transform: rotate3d(0, 0, 1, 135deg);
+		}
+		span:nth-of-type(2){
+			background-color: $gray;
+			position: absolute;
+			width: 20px;
+			height: 2px;
+			right: 10%;
+			top: 17%;
+			transform: rotate3d(0, 0, 1, -135deg);
+		}
+	}
+	&__logo {
+		text-align: center;
+	}
+	&__form {
+		padding: 0 30px;
+		input{
+			margin: 0px 0px 20px 0px;
+		}
+		@media (max-width: $md4){
+			max-width: 350px;
+			margin: 0 auto;
+		}
+	}
+}
+.contact__form.active{
+	top: 8%;
+	@media (max-width: 1025px){
+		right: 5%;
+		top: 12%;
+	}
+	@media (max-width: 856px){
+		right: 2%;
+		top: 12%;
+	}
+	@media (max-width: $md3){
+		top: 77%;
+		right: 2%;
+	}
+	@media (max-width: 694px){
+		bottom: 0;
+		right: 0;
+		left: 25%;
+	}
+	@media (max-width: 515px){
+		left: 15%;
+		top: 80%;
+	}
+	@media (max-width: $md4){
+		left: 0;
+		top: 80%;
+	}
+}
+

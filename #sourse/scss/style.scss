@@ -1,0 +1,140 @@
+@import 'nulling_styles.scss';// ОБНУЛЯЕМ СТИЛИ
+@import 'fonts.scss';// ПОДКЛЮЧАЕМ ШРИФТЫ
+
+//--------------------МИКСИНЫ-----------------
+@mixin flexbox(){display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;font-size: 0;}
+@mixin flexboxinline(){display: -webkit-inline-flex;display: -moz-inline-flex;display: -ms-inline-flex;display: -o-inline-flex;display: inline-flex;}
+
+//----ШРИФТ ПО УМОЛЧАНИЮ
+
+$ff: "Rubik";
+
+//----ШРИФТ ПО УМОЛЧАНИЮ
+
+
+//----ПЕРЕМЕННЫЕ
+$min-width: 320px;
+$mw: 1230px;
+$md1:$mw+12;
+$md2:992.98px;
+$md3:767.98px;
+$md4:479.98px;
+
+//COLORS
+$green: #147E45;
+$gray: #4F5665;
+$black: #000;
+$white: #fff;
+$lightGreen: #1FB765;
+$darkBlue: #0B132A;
+$lightGray: #EEEFF2;
+//----ПЕРЕМЕННЫЕ
+
+
+/*--------------ОСНОВНАЯ ЧАСТЬ------------*/
+
+body{
+	font-family: $ff;
+	font-weight: 400;
+}
+
+@media (max-width: $md3){
+	body.lock{
+		overflow: hidden;
+	}
+}
+
+//------CONTAINER
+.container{
+	max-width: $mw;
+	margin: 0 auto;
+	padding: 0 15px;
+	@media (max-width: $md2){}
+	@media (max-width: $md3){}
+	@media (max-width: $md4){}
+}
+
+//----ОБОЛОЧКА СТРАНИЦЫ
+.wrap {
+	min-height: 100%;
+	overflow: hidden;
+	@include flexbox();
+	flex-direction: column;	
+}
+
+.content {
+	flex: 1 1 auto;
+}
+
+/*-----------ГОТОВЫЕ БЛОКИ---------------*/
+@import 'ui.scss';
+@import 'forms.scss';
+
+/*--------------HEADER------------------*/
+@import 'header.scss';
+
+/*--------------ABOUT------------------*/
+@import 'about.scss';
+
+/*--------------INTRO------------------*/
+@import 'intro.scss';
+
+/*--------------CONTACT-FORM------------------*/
+@import 'contact-form.scss';
+
+/*--------------WEDO------------------*/
+@import 'wedo.scss';
+
+/*--------------BUY-WITH-IT------------------*/
+@import 'buy-with-it.scss';
+
+/*--------------QUESTIONS------------------*/
+@import 'questions.scss';
+
+
+
+
+/*--------------FOOTER------------------*/
+@import 'footer.scss';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

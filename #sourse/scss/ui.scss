@@ -1,0 +1,28 @@
+// ---------------ЛОГОТИП--------------
+.logo{
+	font-family: 'Rubik';
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: $black;
+	span{
+		color: $green;
+	}
+}
+// ---------------ДЛЯ КАРТИНОК--------------
+.ibg{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	min-height: 100vh;
+	img{
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
