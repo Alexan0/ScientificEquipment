@@ -610,6 +610,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-size: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-weight: 400;
   font-size: 17px;
   line-height: 25px;

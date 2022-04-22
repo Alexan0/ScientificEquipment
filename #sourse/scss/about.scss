@@ -43,6 +43,7 @@
 }
 .text__contact{
 	@include flexbox();
+	flex-wrap: wrap;
 	font-weight: 400;
 	font-size: 17px;
 	line-height: 25px;
