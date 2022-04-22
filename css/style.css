@@ -606,21 +606,17 @@ body {
 }
 
 .text__contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 0;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   font-weight: 400;
   font-size: 17px;
   line-height: 25px;
+  white-space: nowrap;
 }
 .text__contact a {
   color: #4F5665;
 }
 .text__contact span {
   margin: 0px 32px 0px 0px;
+  white-space: nowrap;
 }
 
 /*--------------INTRO------------------*/
