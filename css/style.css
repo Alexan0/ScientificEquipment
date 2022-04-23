@@ -334,43 +334,20 @@ body {
 
 .item__select:after {
   content: "";
-  width: 9px;
-  height: 2px;
+  width: 12px;
+  height: 7px;
   display: block;
-  background-color: #fff;
-  -webkit-transform: rotate3d(0, 0, 1, 45deg);
-          transform: rotate3d(0, 0, 1, 45deg);
   position: absolute;
-  top: 47%;
-  right: 20%;
+  background: url("../img/icons/arrow-up.svg") no-repeat;
+  top: 35%;
+  right: 15%;
   z-index: 2;
   cursor: pointer;
 }
 @media (max-width: 856px) {
   .item__select:after {
-    top: 65%;
-    left: 19%;
-  }
-}
-
-.item__select:before {
-  content: "";
-  width: 9px;
-  height: 2px;
-  display: block;
-  background-color: #fff;
-  -webkit-transform: rotate3d(0, 0, 1, -45deg);
-          transform: rotate3d(0, 0, 1, -45deg);
-  position: absolute;
-  top: 47%;
-  right: 10%;
-  z-index: 0;
-  cursor: pointer;
-}
-@media (max-width: 856px) {
-  .item__select:before {
-    top: 65%;
-    left: 21%;
+    top: 60%;
+    left: 18%;
   }
 }
 
